@@ -1,6 +1,8 @@
-import {View, Text} from 'react-native';
+import {View, Text, useWindowDimensions} from 'react-native';
 import React, {useContext} from 'react';
 import {BlogContext} from '../../contexts/BlogContext';
+import {ScrollView} from 'react-native-gesture-handler';
+import HTML from 'react-native-render-html';
 
 // Styles
 import styles from './styles/BlogContentStyles';
@@ -10,10 +12,14 @@ export default function BlogContent({route}) {
   const {postId} = route.params;
   const blogPost = blogPosts.find(post => post.postId === postId);
 
+  const {width} = useWindowDimensions();
+
   return (
-    <View>
-      <Text>{blogPost.title}</Text>
-      <Text>{blogPost.content}</Text>
+    <View style={styles.container}>
+      <ScrollView>
+        {/*<Text>{blogPost.title}</Text>*/}
+        <HTML contentWidth={width} source={{html: blogPost.content}} />
+      </ScrollView>
     </View>
   );
 }
