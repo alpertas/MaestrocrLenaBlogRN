@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   card: {
     flexDirection: 'column',
-    width: '80%',
+    width: '100%',
     overflow: 'hidden',
     borderRadius: 10,
     backgroundColor: '#ECE9E6',
@@ -15,13 +15,12 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
   cardHeader: {
-    aspectRatio: 1.5,
+    aspectRatio: 1,
   },
   cardImage: {
-    flex: 1,
+    aspectRatio: 1,
     width: null,
     height: null,
-    resizeMode: 'cover',
   },
   cardBody: {
     padding: 10,
