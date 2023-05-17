@@ -35,9 +35,17 @@ function App() {
     <NavigationContainer>
       <BlogProvider>
         <Stack.Navigator initialRouteName={isConnected ? 'Blog' : 'NoInternet'}>
-          <Stack.Screen name="Blog" component={Blog} />
+          <Stack.Screen
+            name="Blog"
+            component={Blog}
+            options={{headerLeft: null}}
+          />
           <Stack.Screen name="BlogContent" component={BlogContent} />
-          <Stack.Screen name="NoInternet" component={NoInternet} />
+          <Stack.Screen
+            name="NoInternet"
+            component={NoInternet}
+            options={{title: 'Connection Problem'}}
+          />
         </Stack.Navigator>
       </BlogProvider>
     </NavigationContainer>
