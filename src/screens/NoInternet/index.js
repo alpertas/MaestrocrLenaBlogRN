@@ -19,7 +19,7 @@ export default function NoInternet({navigation}) {
       <TouchableOpacity
         style={styles.checkConnectionButtonContainer}
         onPress={checkConnection}>
-        <Text style={styles.checkConnectionText}>Check Connection</Text>
+        <Text style={styles.checkConnectionText}>Try again</Text>
       </TouchableOpacity>
     </View>
   );
