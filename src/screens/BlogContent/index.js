@@ -16,7 +16,7 @@ export default function BlogContent({route}) {
 
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         {/*<Text>{blogPost.title}</Text>*/}
         <HTML contentWidth={width} source={{html: blogPost.content}} />
       </ScrollView>
