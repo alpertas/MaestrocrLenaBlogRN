@@ -3,6 +3,11 @@
 
 Developing an application that allows us to view the list of blog posts belonging to maestrocr.com and the details of each post.
 
+## Demo
+
+https://github.com/alpertas/MaestrocrLenaBlogRN/assets/16842021/65669d35-3b61-41c6-bddb-18ee136fe853
+
+
 
 ## Screenshots
 
@@ -26,5 +31,6 @@ Developing an application that allows us to view the list of blog posts belongin
 ## TODOs
 
 - [ ]  Refactor!
+- [ ]  Test!
 - [ ]  Add environment file for private informations.
 - [ ]  Optimize FlatList. Use PureComponent for it.
