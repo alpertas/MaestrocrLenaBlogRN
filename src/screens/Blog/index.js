@@ -1,12 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useContext, useEffect, useState, useCallback} from 'react';
-import {View, Text, FlatList, RefreshControl} from 'react-native';
+import {
+  View,
+  Text,
+  FlatList,
+  RefreshControl,
+  ActivityIndicator,
+} from 'react-native';
 import {BlogContext} from '../../contexts/BlogContext';
-
-// Components
 import BlogItem from '../../components/BlogItem';
-
-// Styles
 import styles from './styles/BlogStyles';
 
 const BlogListScreen = ({navigation}) => {
@@ -66,7 +68,7 @@ const BlogListScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       {loading ? (
-        <Text>Loading...</Text>
+        <ActivityIndicator />
       ) : (
         <FlatList
           data={blogPosts}
