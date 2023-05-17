@@ -26,9 +26,18 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   title: {
-    fontSize: 18,
+    fontSize: 20,
     textTransform: 'capitalize',
+    fontWeight: '700',
     marginBottom: 5,
+  },
+  content: {
+    fontSize: 18,
+    opacity: 0.9,
+  },
+  readingTimer: {
+    fontSize: 16,
+    opacity: 0.7,
   },
   cardFooter: {
     padding: 10,

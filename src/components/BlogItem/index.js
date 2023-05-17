@@ -18,10 +18,12 @@ export default function BlogItem({item, navigation}) {
         </View>
         <View style={styles.cardBody}>
           <Text style={styles.title}>{item.title}</Text>
-          <Text>{item.summary}</Text>
+          <Text style={styles.content}>{item.summary}</Text>
         </View>
         <View style={styles.cardFooter}>
-          <Text>{Math.abs(item.totalReadingTime)} minutes read</Text>
+          <Text style={styles.readingTimer}>
+            {Math.abs(item.totalReadingTime)} min read
+          </Text>
         </View>
       </View>
     </TouchableOpacity>
