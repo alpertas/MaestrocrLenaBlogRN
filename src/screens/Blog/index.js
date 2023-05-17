@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useContext, useEffect, useState, useCallback} from 'react';
-import {View, Text, FlatList, RefreshControl, StyleSheet} from 'react-native';
+import {View, Text, FlatList, RefreshControl} from 'react-native';
 import {BlogContext} from '../../contexts/BlogContext';
 
 // Components
