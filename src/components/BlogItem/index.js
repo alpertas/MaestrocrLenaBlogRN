@@ -21,7 +21,7 @@ export default function BlogItem({item, navigation}) {
           <Text>{item.summary}</Text>
         </View>
         <View style={styles.cardFooter}>
-          <Text>{item.totalReadingTime} minutes read</Text>
+          <Text>{Math.abs(item.totalReadingTime)} minutes read</Text>
         </View>
       </View>
     </TouchableOpacity>
